@@ -47,14 +47,9 @@ app.post('/save', async function(req, res){
     try{
         const db= client.db('nyanpaste');
         const pastesCollection= db.collection('pastes');
-        const document= {
-            value,
-        };
-        if(customNameInput!==null){
-            document.customName= customNameInput;
-        }
         const result= await pastesCollection.insertOne({
-            document
+            value,
+            customNameInput
         });
         // console.log(result);
         const id= result.insertedId.toString();
