@@ -1,0 +1,105 @@
+body{
+    background-color: #282936;
+    margin:0;
+}
+
+.container{
+    display: flex;
+    padding: 1rem 0.5rem;
+    font-size: 1rem;
+}
+
+#code-main{
+    padding-top:0;
+    padding-bottom:0;
+}
+
+pre{
+    margin: 0;
+}
+
+.lineNo{
+    color: grey;
+    font-family: monospace;
+    text-align: end;
+}
+
+textarea{
+    background-color: transparent;
+    resize: none;
+    width: 100%;
+    padding: 0;
+    margin-left: 1rem;
+    color: gray;
+    min-height: calc(100vh - 2.1rem);
+    border: none;
+    outline: none;
+}
+
+/* dracula.css */
+/* The CSS code for the 'dracula' theme goes here */
+
+/* Add any additional CSS specific to the header here */
+/* For example, you might want to set the height, width, and padding */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #282a36;
+    padding: 10px 20px;
+    color: #f8f8f2;
+  }
+  
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #50fa7b; /* Dracula Green */
+    text-decoration: none;
+  }
+
+  .logo:hover{
+    text-decoration: underline;
+  }
+  
+  .buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .button {
+    /* Add styles for the buttons here */
+    /* For example, you might want to set the background color, padding, and font styles */
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: #6272a4; /* Dracula Purple */
+    color: #f8f8f2;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 200ms ease; 
+    text-decoration: none;
+  }
+  
+.button:hover {
+    background-color: #bd93f9; /* Dracula Light Purple */
+  }
+
+  #customNameInput {
+    padding: 6px 12px;
+    border: 1px solid #bd93f9; /* Dracula Light Purple */
+    border-radius: 4px;
+    background-color: transparent;
+    color: #f8f8f2;
+    font-size: 16px;
+  }
+  
+  #customNameInput::placeholder {
+    color: #f8f8f2;
+    opacity: 0.5;
+  }
+  
+  #customNameInput:focus {
+    outline: none;
+    border-color: #50fa7b; /* Dracula Green */
+  }

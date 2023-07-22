@@ -1,0 +1,18 @@
+<header>
+        <!-- <div class="logo"> -->
+        <a href="/" class="logo">NyanPaste</a>
+        <div class="buttons">
+            <% if(locals.canSave){ %>
+                <input
+                type="text"
+                id="customNameInput"
+                name="customName"
+                placeholder="Custom name"
+                />
+                <button class="button" type="submit">Save</button>
+                <% } %>
+            <a href="/new" class="button">New</a>
+          <button class="button">Button 3</button>
+        </div>
+      
+</header>
