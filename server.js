@@ -23,7 +23,7 @@ app.get('/', function(req, res){
     const code= `Welcome to nyanpaste!
     
 Use the toolbox at the top to create new file and share your code`;
-    res.render('codePage', {
+    res.status(200).render('codePage', {
         code,
         lineNo: code.split('\n').length,
         language: "plaintext"
