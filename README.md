@@ -3,4 +3,4 @@ nyanpaste is code sharing platform. Users can save their code and share it with 
 
 ### To run a local instance of nyanpaste
 Install node and run:
-``npm server.js``
+``node server.js``
