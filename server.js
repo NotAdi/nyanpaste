@@ -13,6 +13,9 @@ app.use(express.json());
 app.use(cors());
 connect();
 
+app.get('/health', (req, res) => {
+    res.sendStatus(200);
+  });
 
 app.get('/', function(req, res){
     // res.send('hi');
