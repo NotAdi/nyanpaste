@@ -12,6 +12,7 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 app.use(cors());
 connect();
+const port= process.env.PORT || 3000;
 
 app.get('/health', (req, res) => {
     res.sendStatus(200);
@@ -103,6 +104,6 @@ app.get(`/:id`, async function(req, res){
 
 
 
-app.listen(3000, function(){
+app.listen(port, function(){
     console.log("listening on port 3000");
 });
